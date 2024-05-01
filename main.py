@@ -39,10 +39,16 @@ class VN:
     
     def __repr__(self):
         return f'vn("{self}")'
+    def __call__(self):
+      self.patch += 1
 
 new = VN("1.0.0")
 print(new)
 new.patch = 10
 print(new)
-new.patch = 7744652
+new.patch = 774774646453
+print(new)
+new = VN("1.0.0")
+print(new)
+new()
 print(new)
