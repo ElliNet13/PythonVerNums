@@ -1,4 +1,4 @@
-class vn:
+class VN:
     def __init__(self, value):
         self._major, self._minor, self._patch = map(int, value.split('.'))
     
@@ -40,7 +40,7 @@ class vn:
     def __repr__(self):
         return f'vn("{self}")'
 
-new = vn("1.0.0")
+new = VN("1.0.0")
 print(new)
 new.patch = 10
 print(new)
